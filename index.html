@@ -22,29 +22,29 @@
   </section>
   <section id="gallery">
     <h2>Gallery</h2>
-    <section id="gallery">
-        <h2>Our Gallery</h2>
-        <div class="gallery">
-            <img src="pics\front1.jpg" alt="Photo 1" onclick="openLightbox(this)">
-            <img src="pics\front2.jpg" alt="Photo 2" onclick="openLightbox(this)">
-            <img src="pics\front3.jpg" alt="Photo 3" onclick="openLightbox(this)">
-            <img src="pics\up_view.jpg" alt="Photo 4" onclick="openLightbox(this)">
-            <img src="pics\cottage_inside.jpg" alt="Photo 5" onclick="openLightbox(this)">
-            <img src="pics\hall1.jpg" alt="Photo 6" onclick="openLightbox(this)">
-            <img src="pics\hall2.jpg" alt="Photo 7" onclick="openLightbox(this)">
-            <img src="pics\room1.jpg" alt="Photo 8" onclick="openLightbox(this)">
-            <img src="pics\cottage1.jpg" alt="Photo 9" onclick="openLightbox(this)">
-            <img src="pics\cottage2.jpg" alt="Photo 10" onclick="openLightbox(this)">
-            <img src="pics\bathroom1.jpg" alt="Photo 11" onclick="openLightbox(this)">
-            <img src="pics\bathroom2.jpg" alt="Photo 12" onclick="openLightbox(this)">
-            <img src="pics\view1.jpg" alt="Photo 13" onclick="openLightbox(this)">
-            <img src="pics\entrance.jpg" alt="Photo 14" onclick="openLightbox(this)">
-            <img src="pics\route1.jpg" alt="Photo 15" onclick="openLightbox(this)">
-            <img src="pics\route2.jpg" alt="Photo 16" onclick="openLightbox(this)">
-            <img src="pics\route3.jpg" alt="Photo 17" onclick="openLightbox(this)">
-          <!-- Add more images as needed -->
-        </div>
-      </section>      
+    <div class="gallery">
+        <img src="pics/front1.jpg" alt="Photo 1" onclick="openLightbox(this)">
+        <img src="pics/front2.jpg" alt="Photo 2" onclick="openLightbox(this)">
+        <img src="pics/front3.jpg" alt="Photo 3" onclick="openLightbox(this)">
+        <img src="pics/up_view.jpg" alt="Photo 4" onclick="openLightbox(this)">
+        <img src="pics/cottage_inside.jpg" alt="Photo 5" onclick="openLightbox(this)">
+        <img src="pics/hall1.jpg" alt="Photo 6" onclick="openLightbox(this)">
+        <img src="pics/hall2.jpg" alt="Photo 7" onclick="openLightbox(this)">
+        <img src="pics/room1.jpg" alt="Photo 8" onclick="openLightbox(this)">
+        <img src="pics/cottage1.jpg" alt="Photo 9" onclick="openLightbox(this)">
+        <img src="pics/cottage2.jpg" alt="Photo 10" onclick="openLightbox(this)">
+        <img src="pics/bathroom1.jpg" alt="Photo 11" onclick="openLightbox(this)">
+        <img src="pics/bathroom2.jpg" alt="Photo 12" onclick="openLightbox(this)">
+        <img src="pics/view1.jpg" alt="Photo 13" onclick="openLightbox(this)">
+        <img src="pics/entrance.jpg" alt="Photo 14" onclick="openLightbox(this)">
+        <img src="pics/route1.jpg" alt="Photo 15" onclick="openLightbox(this)">
+        <img src="pics/route2.jpg" alt="Photo 16" onclick="openLightbox(this)">
+        <img src="pics/route3.jpg" alt="Photo 17" onclick="openLightbox(this)">
+    </div>
+    <!-- Lightbox container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="">
+    </div>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
@@ -56,10 +56,11 @@
         <input type="email" id="email" name="email" required>
         <br>
         <button type="submit">Send</button>
-      </form>         
+    </form>         
   </section>
   <footer>
-    <p>© 2025 [Homestay Name]. All rights reserved.</p>
+    <p>© 2025 Finer Things Retreat. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
