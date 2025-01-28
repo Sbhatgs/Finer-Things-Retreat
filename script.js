@@ -3,17 +3,33 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     alert('Thank you for your inquiry! We will get back to you soon.');
   });
 
-// Open the lightbox
-function openLightbox(img) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
+  const images = document.querySelectorAll(".gallery img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
   
-    lightbox.style.display = "flex"; // Show the lightbox
-    lightboxImg.src = img.src; // Set the clicked image's source
+  let currentIndex = 0;
+  
+  // Open lightbox
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightboxImage();
+    lightbox.style.display = "flex";
   }
   
-  // Close the lightbox
+  // Close lightbox
   function closeLightbox() {
-    const lightbox = document.getElementById("lightbox");
-    lightbox.style.display = "none"; // Hide the lightbox
+    lightbox.style.display = "none";
   }
+  
+  // Change lightbox image
+  function changeImage(direction) {
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    updateLightboxImage();
+  }
+  
+  // Update the lightbox image
+  function updateLightboxImage() {
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+  }
+  
