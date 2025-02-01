@@ -44,12 +44,10 @@ body {
   }
   
   #gallery .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
   }
-  
   #gallery .gallery img {
     width: 200px;
     height: 150px;
@@ -98,8 +96,8 @@ body {
   }
   
   #lightbox .close {
-    top: 10px;
-    right: 10px;
+    top: 5%;
+    right: 5%;
   }
   
   #lightbox .prev {
