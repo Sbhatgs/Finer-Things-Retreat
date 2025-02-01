@@ -40,12 +40,12 @@ footer {
 
 #gallery {
     text-align: center;
-    margin: 200px 0;
+    margin: 250px 0;
   }
 
   
 #gallery .gallery {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
   }
