@@ -43,11 +43,17 @@ footer {
     margin: 250px 0;
   }
 
-  
-#gallery .gallery {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+  #gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  #gallery .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
   }
 #gallery .gallery img {
     width: 200px;
