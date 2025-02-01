@@ -62,7 +62,7 @@ body {
   }
 
   /* Lightbox styling */
-#lightbox {
+  #lightbox {
     display: none;
     position: fixed;
     top: 0;

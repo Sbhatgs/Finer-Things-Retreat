@@ -33,3 +33,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     lightboxImg.alt = images[currentIndex].alt;
   }
   
+// Attach event listeners for images
+images.forEach((image, index) => {
+  image.addEventListener('click', () => openLightbox(index));
+});
+
+// Attach event listeners for controls
+document.querySelector('.close').addEventListener('click', closeLightbox);
+document.querySelector('.prev').addEventListener('click', () => changeImage(-1));
+document.querySelector('.next').addEventListener('click', () => changeImage(1));
