@@ -6,50 +6,50 @@ body {
     color: #333;
   }
   
-  header {
+header {
     text-align: center;
     padding: 2rem;
     background: #f4a261;
     color: white;
   }
   
-  nav {
+nav {
     display: flex;
     justify-content: center;
     background: #2a9d8f;
     padding: 1rem;
   }
   
-  nav a {
+nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
   }
   
-  section {
+section {
     padding: 2rem;
     margin: 1rem;
   }
   
-  footer {
+footer {
     text-align: center;
     padding: 1rem;
     background: #264653;
     color: white;
   }
 
-  #gallery {
+#gallery {
     text-align: center;
     margin: 50px 0;
   }
 
   
-  #gallery .gallery {
-    display: flex;
+#gallery .gallery {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
   }
-  #gallery .gallery img {
+#gallery .gallery img {
     width: 200px;
     height: 150px;
     object-fit: cover;
@@ -58,12 +58,11 @@ body {
     transition: transform 0.3s;
   }
   
-  #gallery .gallery img:hover {
+#gallery .gallery img:hover {
     transform: scale(1.1);
   }
 
-  /* Lightbox styling */
-  #lightbox {
+#lightbox {
     display: none;
     position: fixed;
     top: 0;
@@ -76,7 +75,7 @@ body {
     z-index: 1000;
   }
   
-  #lightbox img {
+ #lightbox img {
     max-width: 90%;
     max-height: 80%;
     border: 5px solid #fff;
@@ -113,30 +112,30 @@ body {
     transform: translateY(-50%);
   }
 
-    #contact {
-        background-color: #f4f4f9;
+#contact {
+      background-color: #f4f4f9;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       text-align: center;
     }
 
-    #contact ul {
-        list-style: none;
+#contact ul {
+      list-style: none;
       padding: 0;
     }
 
-    #contact li {
+#contact li {
       margin: 0.5rem 0;
       font-size: 1.2rem;
     }
 
-    #contact a {
+#contact a {
       color: #2a9d8f;
       text-decoration: none;
       font-weight: bold;
     }
 
-    #contact a:hover {
+#contact a:hover {
       text-decoration: underline;
     }
