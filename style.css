@@ -39,6 +39,50 @@ footer {
   color: white;
 }
 
+/* Room Section Styling */
+#rooms {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#rooms h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #264653;
+}
+
+.room-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-card h3 {
+  color: #2a9d8f;
+  margin-bottom: 0.5rem;
+}
+
+.room-card p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+
 /* Gallery Section */
 #gallery {
   text-align: center;
